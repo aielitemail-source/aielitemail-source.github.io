@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Bots de entrenamiento/rastreo de IA: permitidos a proposito (queremos
+# que citen bien el contenido). Revisar esta decision si cambia la
+# estrategia de monetizacion de trafico de IA (ver PLAN.md).
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://REEMPLAZAR-DOMINIO/sitemap.xml

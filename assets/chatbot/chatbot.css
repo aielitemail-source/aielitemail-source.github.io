@@ -1,0 +1,131 @@
+/* Widget de Aielite: avatar flotante + panel de chat. Reutiliza los tokens
+   de color de /styles.css (--bg, --cian, --magenta, --ambar, --text). */
+
+.aielite-widget {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 50;
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+}
+
+/* ---------- botón / avatar ---------- */
+.aielite-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid oklch(0.85 0.19 200 / 0.5);
+  background: oklch(0.10 0.02 270 / 0.9);
+  box-shadow: 0 0 18px oklch(0.85 0.19 200 / 0.45), 0 4px 18px rgb(0 0 0 / 0.4);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  transition: transform 0.2s var(--ease, ease);
+}
+.aielite-toggle:hover { transform: scale(1.06); }
+.aielite-toggle:focus-visible { outline: 2px solid var(--cian); outline-offset: 2px; }
+
+.aielite-face { position: relative; width: 30px; height: 22px; }
+.af-eye {
+  position: absolute; top: 0; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--cian);
+  box-shadow: 0 0 6px var(--cian), 0 0 2px 1px var(--magenta);
+  animation: aielite-blink 4.2s ease-in-out infinite;
+}
+.af-eye:first-child { left: 2px; }
+.af-eye:last-child { right: 2px; }
+.af-mouth {
+  position: absolute; bottom: 0; left: 6px; width: 18px; height: 4px;
+  background: var(--magenta);
+  box-shadow: 0 0 6px var(--magenta);
+  border-radius: 2px;
+  transform-origin: center;
+}
+@keyframes aielite-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.15); } }
+
+/* boca "hablando" cuando la voz está activa */
+.aielite-widget.speaking .af-mouth { animation: aielite-talk 0.32s steps(2) infinite; }
+@keyframes aielite-talk { 0%, 100% { height: 4px; } 50% { height: 9px; } }
+
+/* leve glitch RGB-split permanente en el avatar, sutil */
+.aielite-toggle::before, .aielite-toggle::after {
+  content: ""; position: absolute; inset: 0; border-radius: 50%;
+  pointer-events: none; mix-blend-mode: screen; opacity: 0;
+}
+.aielite-toggle::before { box-shadow: inset 0 0 0 1px var(--cian); animation: aielite-glitch-a 6.5s steps(1) infinite; }
+.aielite-toggle::after { box-shadow: inset 0 0 0 1px var(--magenta); animation: aielite-glitch-b 6.5s steps(1) infinite; }
+@keyframes aielite-glitch-a { 0%, 92%, 100% { opacity: 0; } 93%, 95% { opacity: 0.9; transform: translate(-2px, 0); } }
+@keyframes aielite-glitch-b { 0%, 90%, 100% { opacity: 0; } 91%, 93% { opacity: 0.9; transform: translate(2px, 0); } }
+
+/* ---------- panel de chat ---------- */
+.aielite-panel {
+  position: absolute;
+  right: 0;
+  bottom: 74px;
+  width: min(340px, calc(100vw - 2.5rem));
+  max-height: min(480px, 70vh);
+  display: none;
+  flex-direction: column;
+  background: oklch(0.10 0.02 270 / 0.92);
+  border: 1px solid oklch(0.85 0.19 200 / 0.35);
+  border-radius: 14px;
+  box-shadow: 0 0 30px oklch(0.72 0.26 340 / 0.18), 0 10px 30px rgb(0 0 0 / 0.5);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+.aielite-widget.open .aielite-panel { display: flex; }
+
+.aielite-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.65rem 0.9rem;
+  border-bottom: 1px solid oklch(0.85 0.19 200 / 0.25);
+  color: var(--cian);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+.aielite-mute {
+  background: none; border: none; color: var(--text-dim);
+  cursor: pointer; font-size: 1rem; line-height: 1; padding: 0.15rem 0.3rem;
+}
+.aielite-mute:focus-visible { outline: 1px solid var(--cian); }
+
+.aielite-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.75rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+}
+.aielite-msg { max-width: 88%; padding: 0.5rem 0.7rem; border-radius: 10px; line-height: 1.35; }
+.aielite-msg.bot { align-self: flex-start; background: oklch(0.85 0.19 200 / 0.12); border: 1px solid oklch(0.85 0.19 200 / 0.25); color: var(--text); }
+.aielite-msg.user { align-self: flex-end; background: oklch(0.72 0.26 340 / 0.14); border: 1px solid oklch(0.72 0.26 340 / 0.3); color: var(--text); }
+.aielite-msg.system { align-self: center; color: var(--text-dim); font-size: 0.78rem; font-style: italic; }
+
+.aielite-quick { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0 0.9rem 0.6rem; }
+.aielite-chip {
+  font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--ambar);
+  border: 1px solid oklch(0.82 0.19 70 / 0.4); border-radius: 999px;
+  padding: 0.3rem 0.65rem; background: none; cursor: pointer;
+}
+.aielite-chip:hover { background: oklch(0.82 0.19 70 / 0.12); }
+
+.aielite-input { display: flex; border-top: 1px solid oklch(0.85 0.19 200 / 0.25); }
+.aielite-input input {
+  flex: 1; background: none; border: none; color: var(--text);
+  padding: 0.7rem 0.9rem; font-size: 0.88rem; font-family: inherit;
+}
+.aielite-input input:focus { outline: none; }
+.aielite-input input::placeholder { color: var(--text-dim); }
+.aielite-input button {
+  background: none; border: none; color: var(--cian);
+  font-size: 0.68rem; letter-spacing: 0.08em; padding: 0 0.9rem; cursor: pointer;
+}
+.aielite-input button:disabled { opacity: 0.4; cursor: default; }
+
+@media (max-width: 420px) {
+  .aielite-widget { right: 0.75rem; bottom: 0.75rem; }
+}

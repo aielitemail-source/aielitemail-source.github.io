@@ -1,0 +1,239 @@
+::ffff:127.0.0.1 - - [08/Sep/2026 15:09:52] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:10:18] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:10:23] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:10:23] "GET /assets/iaelite/hero.png HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:10:23] "GET /assets/correcaminos/hero.png HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:10:23] code 404, message File not found
+::1 - - [08/Sep/2026 15:10:23] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:11:20] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:11:20] "GET /assets/iaelite/hero.png HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:11:20] "GET /assets/correcaminos/hero.png HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:11:20] code 404, message File not found
+::1 - - [08/Sep/2026 15:11:20] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:11:25] code 404, message File not found
+::1 - - [08/Sep/2026 15:11:25] "GET /iaelite-news/ HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:12:37] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:12:37] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:12:37] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:12:45] code 404, message File not found
+::1 - - [08/Sep/2026 15:12:45] "GET /iaelite-news/ HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:12:51] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:12:51] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:12:51] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:12:51] code 404, message File not found
+::1 - - [08/Sep/2026 15:12:51] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:14:54] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:14:54] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:14:54] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:14:54] code 404, message File not found
+::1 - - [08/Sep/2026 15:14:54] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:15:28] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:15:28] code 404, message File not found
+::1 - - [08/Sep/2026 15:15:28] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:15:48] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:15:48] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:15:48] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:17:14] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:17:14] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:17:14] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:17:14] code 404, message File not found
+::1 - - [08/Sep/2026 15:17:14] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:17:48] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:17:48] code 404, message File not found
+::1 - - [08/Sep/2026 15:17:48] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:21:47] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:21:47] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:21:47] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:21:54] code 404, message File not found
+::1 - - [08/Sep/2026 15:21:54] "GET /iaelite-news/ HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:23:57] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:23:57] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:23:57] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:23:57] code 404, message File not found
+::1 - - [08/Sep/2026 15:23:57] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:24:18] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:24:18] code 404, message File not found
+::1 - - [08/Sep/2026 15:24:18] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:41:59] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:41:59] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:41:59] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:41:59] code 404, message File not found
+::1 - - [08/Sep/2026 15:41:59] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:43:31] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:43:31] code 404, message File not found
+::1 - - [08/Sep/2026 15:43:31] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:44:22] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:44:22] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:44:22] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:44:55] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:44:55] code 404, message File not found
+::1 - - [08/Sep/2026 15:44:55] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:45:20] "GET / HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:45:20] code 404, message File not found
+::1 - - [08/Sep/2026 15:45:20] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:45:47] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:45:47] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:45:47] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:45:47] code 404, message File not found
+::1 - - [08/Sep/2026 15:45:47] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:55:55] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:56:07] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:56:07] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:56:07] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 15:56:07] code 404, message File not found
+::1 - - [08/Sep/2026 15:56:07] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:56:49] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:56:49] code 404, message File not found
+::1 - - [08/Sep/2026 15:56:49] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 15:57:26] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 15:57:26] code 404, message File not found
+::1 - - [08/Sep/2026 15:57:26] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 16:06:53] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:06:54] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:06:54] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:10:25] code 404, message File not found
+::1 - - [08/Sep/2026 16:10:25] "GET /iaelite-news/ HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 16:16:32] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:16:32] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:16:32] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:16:32] code 404, message File not found
+::1 - - [08/Sep/2026 16:16:32] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 16:18:19] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:18:19] code 404, message File not found
+::1 - - [08/Sep/2026 16:18:19] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 16:19:30] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:23:35] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:23:35] "GET /styles.css HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:23:35] "GET /clock.js HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:23:35] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:23:35] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:23:40] "GET /iaelite-news/ HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:23:45] "GET /correcaminos/ HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:27:53] "GET /correcaminos/ HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:27:53] "GET /styles.css HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:27:53] "GET /clock.js HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:27:53] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:27:53] code 404, message File not found
+::1 - - [08/Sep/2026 16:27:53] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 16:28:32] "GET /correcaminos/episodio-01/ HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:28:32] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:28:32] "GET /clock.js HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:28:32] "GET /assets/correcaminos/episodio-01.mp4 HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:28:32] code 404, message File not found
+::1 - - [08/Sep/2026 16:28:32] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [08/Sep/2026 16:29:29] "GET /iaelite-news/ HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 59935, 0, 0)
+::1 - - [08/Sep/2026 16:29:29] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:29:29] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:29:29] "GET /clock.js HTTP/1.1" 304 -
+::1 - - [08/Sep/2026 16:29:29] code 404, message File not found
+::1 - - [08/Sep/2026 16:29:29] "GET /favicon.ico HTTP/1.1" 404 -
+Traceback (most recent call last):
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+----------------------------------------
+::1 - - [08/Sep/2026 16:29:36] "GET / HTTP/1.1" 200 -
+::1 - - [08/Sep/2026 16:29:36] code 404, message File not found
+::1 - - [08/Sep/2026 16:29:36] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [09/Sep/2026 12:17:48] "GET /sobre-nosotros/ HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 12:17:48] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 12:17:48] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 12:17:48] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 12:17:48] "GET /clock.js HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 12:17:48] code 404, message File not found
+::1 - - [09/Sep/2026 12:17:48] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [09/Sep/2026 12:20:33] "GET /contacto/ HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 12:20:33] code 404, message File not found
+::1 - - [09/Sep/2026 12:20:33] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [09/Sep/2026 12:21:17] "GET / HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 12:21:17] code 404, message File not found
+::1 - - [09/Sep/2026 12:21:17] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [09/Sep/2026 12:26:59] "GET /aviso-legal/ HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 12:26:59] code 404, message File not found
+::1 - - [09/Sep/2026 12:26:59] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [09/Sep/2026 13:45:53] code 404, message File not found
+::1 - - [09/Sep/2026 13:45:53] "GET /api/v1/ping HTTP/1.1" 404 -
+::1 - - [09/Sep/2026 14:42:37] "GET /iaelite-news/ HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 14:42:37] "GET /styles.css HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 14:42:37] "GET /clock.js HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 14:42:37] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 14:43:05] "GET / HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 14:43:05] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 14:43:08] "GET /correcaminos/ HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 14:43:11] "GET /correcaminos/episodio-01/ HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 14:43:11] "GET /assets/correcaminos/episodio-01.mp4 HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 14:43:14] code 404, message File not found
+::1 - - [09/Sep/2026 14:43:14] "GET /favicon.ico HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 52848, 0, 0)
+Traceback (most recent call last):
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Users\aieli\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+----------------------------------------
+::1 - - [09/Sep/2026 14:59:12] "GET / HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 14:59:12] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 14:59:12] "GET /assets/iaelite/hero.png HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 14:59:12] "GET /assets/correcaminos/hero.png HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 14:59:12] "GET /clock.js HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 14:59:12] "GET /assets/chatbot/chatbot.css HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 14:59:12] "GET /assets/chatbot/chatbot.js HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 14:59:13] code 404, message File not found
+::1 - - [09/Sep/2026 14:59:13] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [09/Sep/2026 15:01:12] "GET / HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 15:01:12] "GET /assets/chatbot/chatbot.css HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 15:01:12] "GET /assets/chatbot/chatbot.js HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 15:01:13] code 404, message File not found
+::1 - - [09/Sep/2026 15:01:13] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [09/Sep/2026 15:02:00] "GET /correcaminos/ HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 15:02:00] "GET /assets/chatbot/chatbot.css HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 15:02:00] "GET /assets/chatbot/chatbot.js HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 15:02:00] code 404, message File not found
+::1 - - [09/Sep/2026 15:02:00] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [09/Sep/2026 15:02:55] "GET / HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 15:02:55] "GET /clock.js HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 15:02:55] "GET /assets/chatbot/chatbot.css HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 15:02:55] "GET /assets/chatbot/chatbot.js HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 15:05:16] "GET / HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 15:05:16] "GET /assets/chatbot/chatbot.css HTTP/1.1" 304 -
+::1 - - [09/Sep/2026 15:05:16] "GET /assets/chatbot/chatbot.js HTTP/1.1" 200 -
+::1 - - [09/Sep/2026 15:05:16] code 404, message File not found
+::1 - - [09/Sep/2026 15:05:16] "GET /favicon.ico HTTP/1.1" 404 -
