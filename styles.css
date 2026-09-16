@@ -491,3 +491,11 @@ footer a:hover { text-shadow: 0 0 8px var(--cian); }
 }
 .producto .comprar:hover { filter: brightness(1.12); }
 .producto .agotado, .producto .tambien { color: var(--text-dim); font-size: 0.75rem; }
+
+/* Catalogo v2: una tarjeta por diseño con un boton por producto. */
+.section-title .subtitulo { color: var(--text-dim); font-size: 0.92rem; max-width: 46ch; margin: 0.5rem auto 0; }
+.producto .opciones { display: flex; flex-direction: column; gap: 0.45rem; margin-top: 0.4rem; }
+.producto .comprar { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.producto .comprar .flecha { opacity: 0.6; }
+.producto .comprar:hover .flecha { opacity: 1; }
+.producto .tambien { display: block; margin: -0.15rem 0 0.2rem; }
