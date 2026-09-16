@@ -427,3 +427,32 @@ footer a:hover { text-shadow: 0 0 8px var(--cian); }
   .tienda-destacada .caja { grid-template-columns: 1fr; padding: 1.75rem; gap: 1.75rem; }
   .tienda-destacada .fotos img:nth-child(2) { transform: none; }
 }
+
+/* Fuentes citadas por episodio y enlaces a redes. Usuario 2026-09-16: "en la pagina de cada
+   canal hay que añadir las redes sociales, y las fuentes que se citan para la informacion de
+   cada video". */
+.gpanel .fuentes { margin-top: 0.75rem; font-size: 0.8rem; }
+.gpanel .fuentes summary { cursor: pointer; color: var(--text-dim); letter-spacing: 0.04em; }
+.gpanel .fuentes summary:hover { color: var(--text); }
+.gpanel .fuentes ul { margin: 0.5rem 0 0; padding-left: 1.1rem; }
+.gpanel .fuentes li { margin-bottom: 0.3rem; }
+.gpanel .fuentes a { color: var(--text-dim); text-decoration: underline; word-break: break-word; }
+.gpanel .fuentes a:hover { color: var(--accent, var(--cian)); }
+.redes-canal { max-width: 1120px; margin: 0 auto 3.5rem; padding: 0 1.25rem; text-align: center; }
+.redes-canal .lista { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-top: 1rem; }
+.redes-canal a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.35rem;
+  border: 1px solid color-mix(in oklch, var(--accent, var(--cian)) 45%, transparent);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.18s var(--ease), transform 0.18s var(--ease);
+}
+.redes-canal a:hover {
+  background: color-mix(in oklch, var(--accent, var(--cian)) 18%, transparent);
+  transform: translateY(-2px);
+}
