@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA Elite — Canales de IA, patinetes y más</title>
+<meta name="description" content="Portal de canales: noticias de inteligencia artificial con Aielite, y Correcaminos, tu taller de confianza de patinetes eléctricos. Vídeos, novedades y merchandising.">
+<meta property="og:title" content="IA Elite — Canales de IA, patinetes y más">
+<meta property="og:description" content="Noticias de IA con Aielite y reparación de patinetes con Correcaminos. Vídeos y merchandising.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "IA Elite",
+  "url": "https://aielitemail-source.github.io/",
+  "description": "Portal de canales: noticias de inteligencia artificial con Aielite (IaElite News) y reparación de patinetes eléctricos con Correcaminos.",
+  "subOrganization": [
+    { "@type": "Organization", "name": "IaElite News", "url": "https://aielitemail-source.github.io/iaelite-news/" },
+    { "@type": "Organization", "name": "Correcaminos", "url": "https://aielitemail-source.github.io/correcaminos/" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="scanline" aria-hidden="true"></div>
+
+<header>
+  <div class="header-left">
+    <div class="chrome-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    <span class="logo"><span>IA ELITE</span></span>
+  </div>
+  <div class="header-right">
+    <span class="sys-clock mono" id="sys-clock" aria-hidden="true">SYS TIME 00:00:00<span class="ms">.000</span></span>
+    <span class="status mono">Sistema en línea</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="floor-grid" aria-hidden="true"></div>
+  <div class="hero-bg" aria-hidden="true">
+    <img src="/assets/iaelite/hero.png" alt="">
+    <img src="/assets/correcaminos/hero.png" alt="">
+  </div>
+
+  <span class="readout readout--tl mono">Canales activos<br><b>02</b></span>
+  <span class="readout readout--br mono">Origen<br><b>100% IA</b></span>
+
+  <span class="eyebrow mono">Transmisión activa</span>
+  <h1 data-text="Dos canales. Una manera de mirar el mundo con IA.">Dos canales.<br>Una manera de mirar el mundo con IA.</h1>
+  <div class="hero-divider" aria-hidden="true"></div>
+  <p>Noticias de inteligencia artificial y reparación de patinetes eléctricos, contados por sus propios personajes.</p>
+
+  <div class="badges mono" role="list">
+    <span role="listitem">⬡ 100% IA</span>
+    <span role="listitem">⬡ 2 canales</span>
+    <span role="listitem">⬡ Contenido diario</span>
+  </div>
+
+  <a href="#canales" class="scroll-cue mono">Explorar canales</a>
+</section>
+
+<section class="grid-panels" id="canales" aria-label="Canales">
+  <a href="/iaelite-news/" class="gpanel" style="--accent: var(--cian);">
+    <img src="/assets/iaelite/hero.png" alt="Aielite, presentadora de IA, en un centro de datos futurista con neón cian y magenta">
+    <span class="panel-count mono" aria-hidden="true">// 01</span>
+    <div class="gpanel-content">
+      <span class="etiqueta mono">Inteligencia artificial</span>
+      <h2>IaElite News</h2>
+      <p>Noticias, novedades y trucos de IA, contados por Aielite — una IA hablando de IA.</p>
+      <span class="gpanel-cta mono">Entrar al canal</span>
+    </div>
+  </a>
+
+  <a href="/correcaminos/" class="gpanel" style="--accent: var(--ambar);">
+    <img src="/assets/correcaminos/hero.png" alt="Correcaminos, mecánico cyborg de patinetes eléctricos, en su taller" style="object-position: center 22%;">
+    <span class="panel-count mono" aria-hidden="true">// 02</span>
+    <div class="gpanel-content">
+      <span class="etiqueta mono">Patinetes eléctricos</span>
+      <h2>Correcaminos</h2>
+      <p>Tu taller de confianza. Reparaciones, estafas destapadas y mucho humor de taller.</p>
+      <span class="gpanel-cta mono">Entrar al canal</span>
+    </div>
+  </a>
+
+  <div class="section-more mono" style="grid-column: 1 / -1;">+ Más canales próximamente</div>
+</section>
+
+<footer>
+  <p>IA Elite — <a href="/iaelite-news/">IaElite News</a> · <a href="/correcaminos/">Correcaminos</a></p>
+  <nav aria-label="Legal">
+    <a href="/aviso-legal/">Aviso legal</a>
+    <a href="/condiciones-venta/">Condiciones de venta</a>
+    <a href="/privacidad/">Privacidad</a>
+    <a href="/cookies/">Cookies</a>
+    <a href="/contacto/">Contacto</a>
+    <a href="/sobre-nosotros/">Sobre nosotros</a>
+  </nav>
+</footer>
+
+<script src="/clock.js"></script>
+<link rel="stylesheet" href="/assets/chatbot/chatbot.css">
+<script src="/assets/chatbot/chatbot.js" defer></script>
+</body>
+</html>
