@@ -25,4 +25,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://REEMPLAZAR-DOMINIO/sitemap.xml
+Sitemap: https://aielitemail-source.github.io/sitemap.xml
