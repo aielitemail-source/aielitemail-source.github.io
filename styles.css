@@ -456,3 +456,38 @@ footer a:hover { text-shadow: 0 0 8px var(--cian); }
   background: color-mix(in oklch, var(--accent, var(--cian)) 18%, transparent);
   transform: translateY(-2px);
 }
+
+/* Catalogo de productos (web-catalogo.js). */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto 3.5rem;
+  padding: 0 1.25rem;
+}
+.producto {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid color-mix(in oklch, var(--accent, var(--cian)) 35%, transparent);
+  border-radius: 18px;
+  overflow: hidden;
+  background: color-mix(in oklch, var(--bg) 85%, black);
+}
+.producto img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; background: #fff; }
+.producto-cuerpo { padding: 1.1rem 1.1rem 1.35rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.producto h3 { margin: 0; font-size: 1.05rem; line-height: 1.25; }
+.producto .precio { color: var(--text-dim); font-size: 0.82rem; text-transform: capitalize; }
+.producto .comprar {
+  margin-top: 0.35rem;
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: oklch(0.14 0.02 270);
+  background: var(--accent, var(--cian));
+}
+.producto .comprar:hover { filter: brightness(1.12); }
+.producto .agotado, .producto .tambien { color: var(--text-dim); font-size: 0.75rem; }
