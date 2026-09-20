@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aielite Lab · Experimento 01: una IA vende un boli por el máximo beneficio posible</title>
+<meta name="description" content="Experimento abierto: una IA intenta vender un bolígrafo normal por el máximo beneficio posible y lo documenta todo. Curso gratuito para montar un agente de ventas con IA.">
+<meta property="og:title" content="Aielite Lab · Experimento 01: una IA vende un boli por el máximo beneficio posible">
+<meta property="og:description" content="Experimento abierto: una IA intenta vender un bolígrafo normal por el máximo beneficio posible y lo documenta todo. Curso gratuito para montar un agente de ventas con IA.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://aielitelab.com/reto-boli/">
+<meta property="og:image" content="https://aielitelab.com/assets/og/general.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aielitelab.com/reto-boli/">
+<link rel="alternate" hreflang="es" href="https://aielitelab.com/reto-boli/">
+<link rel="alternate" hreflang="en" href="https://aielitelab.com/en/pen-challenge/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--fondo:#f7f6f2;--tinta:#1d1f23;--suave:#5b6069;--linea:#d9d6cf;--acento:#1f4e79;--caja:#ffffff}
+@media (prefers-color-scheme:dark){:root{--fondo:#15171a;--tinta:#e9e7e2;--suave:#a3a8b0;--linea:#2c3036;--acento:#8fb8de;--caja:#1c1f23}}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--tinta);font:17px/1.6 "Source Serif 4",Georgia,serif}
+.cont{max-width:880px;margin:0 auto;padding:32px 20px 64px}a{color:var(--acento)}
+.barra{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:600 12px/1.4 "IBM Plex Mono",monospace;letter-spacing:.08em;color:var(--suave);border-bottom:1px solid var(--linea);padding-bottom:12px}
+.barra a{text-decoration:none}.kicker{font:600 13px "IBM Plex Mono",monospace;letter-spacing:.14em;color:var(--acento);margin:40px 0 8px}
+h1{font:600 clamp(30px,5vw,46px)/1.15 "Source Serif 4",Georgia,serif;margin:0 0 16px}h2{font:600 24px "Source Serif 4",Georgia,serif;margin:44px 0 12px;border-top:1px solid var(--linea);padding-top:24px}
+.lead{font-size:20px;color:var(--suave)}.fichas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:20px}
+.ficha{background:var(--caja);border:1px solid var(--linea);border-radius:6px;padding:16px}.ficha b{display:block;font:600 12px "IBM Plex Mono",monospace;letter-spacing:.1em;color:var(--acento);margin-bottom:6px}
+ol.lec{padding-left:0;list-style:none}ol.lec li{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--linea)}ol.lec .n{font:600 13px "IBM Plex Mono",monospace;color:var(--acento);min-width:92px}
+.pronto{color:var(--suave);font-style:italic}.tabla{width:100%;overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--linea);vertical-align:top}th{font:600 12px "IBM Plex Mono",monospace;letter-spacing:.08em;color:var(--suave)}
+.dato{font:600 40px "IBM Plex Mono",monospace;color:var(--acento)}.cta{display:inline-block;margin-top:10px;padding:10px 18px;border:1px solid var(--acento);border-radius:4px;text-decoration:none;font-weight:600}
+footer{margin-top:56px;border-top:1px solid var(--linea);padding-top:16px;font-size:14px;color:var(--suave)}
+</style>
+</head>
+<body><!--aie-sec--><style>#aie-sec{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:center;padding:8px 12px;background:#0b0b10;color:#fff;font:600 14px/1.2 system-ui,-apple-system,Segoe UI,sans-serif}#aie-sec a{color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3)}#aie-sec a.dest{background:#ffd23f;color:#111;border-color:#ffd23f;font-weight:800}#aie-sec a:hover{filter:brightness(1.2)}</style><div id="aie-sec"><a href="/">Aielite Lab</a><a class="dest" href="/reto-boli/">Reto del boli</a><a href="/iaelite-news/">IaElite News</a></div><!--/aie-sec-->
+<div class="cont">
+<nav class="barra"><a href="/">IA ELITE</a><span>AIELITE LAB · EXP-01</span><a href="/en/pen-challenge/" hreflang="en">English version</a></nav>
+<p class="kicker">AIELITE LAB · EXPERIMENTO 01</p>
+<h1>¿Puede una IA vender un boli por el máximo beneficio posible?</h1>
+<p class="lead">Un bolígrafo normal de un euro. Un equipo de inteligencias artificiales. Una subasta pública. Documentamos cada paso, en tiempo real, para que cualquiera pueda replicarlo.</p>
+<div class="fichas">
+<div class="ficha"><b>Pregunta de investigación</b>¿Puede un equipo de IAs, sin trucos ni atributos falsos, hacer que un objeto de un euro alcance un precio alto solo con la campaña?</div>
+<div class="ficha"><b>Hipótesis</b>El valor no lo pone el objeto: lo pone la historia, la participación y la transparencia.</div>
+<div class="ficha"><b>Método</b>Un equipo de IAs (estrategia, producción de vídeo, marketing y ventas) prepara la campaña durante 8 lecciones, subasta el boli en eBay 10 días (salida 1 €, sin reserva) y publica los datos cada día.</div>
+</div>
+<h2>Reglas del experimento</h2>
+<ul><li>Es un boli normal: no fue de nadie famoso, no da suerte, no es edición limitada.</li><li>Pujas reales: nadie del equipo puja ni pide pujas.</li><li>Cifras reales: si un dato no se sabe, se dice.</li><li>Lo recaudado financia el proyecto Aielite Lab. No hay sorteos ni premios en dinero.</li></ul>
+<h2>Lecciones</h2>
+<ol class="lec"><li><span class="n">Lección 1</span><span>El reto</span></li><li><span class="n">Lección 2</span><span>Las IAs del equipo <span class=pronto>· próximamente</span></span></li><li><span class="n">Lección 3</span><span>Los agentes <span class=pronto>· próximamente</span></span></li><li><span class="n">Lección 4</span><span>Las skills de marketing y ventas <span class=pronto>· próximamente</span></span></li><li><span class="n">Lección 5</span><span>La estrategia <span class=pronto>· próximamente</span></span></li><li><span class="n">Lección 6</span><span>Vídeo con IA <span class=pronto>· próximamente</span></span></li><li><span class="n">Lección 7</span><span>Dónde se anuncia <span class=pronto>· próximamente</span></span></li><li><span class="n">Lección 8</span><span>Todo listo <span class=pronto>· próximamente</span></span></li></ol>
+<h2>Datos abiertos</h2>
+<p>Puja actual</p><p class="pronto">La subasta aún no ha empezado.</p>
+<p><a href="/reto-boli/datos.csv">Descargar datos (CSV)</a></p>
+<h2>Regalos: todo lo que usamos, gratis</h2>
+<div class="tabla"><table><thead><tr><th>#</th><th>Recurso</th><th>Gratis</th><th>Límites</th><th>Licencia</th></tr></thead><tbody><tr><td>Lección 2</td><td><a href="https://ollama.com/" rel="noopener" target="_blank">Ollama (ejecución local de modelos)</a></td><td>Sí (completo)</td><td>Sin límites de uso local</td><td>MIT</td></tr><tr><td>Lección 2</td><td><a href="https://huggingface.co/" rel="noopener" target="_blank">Hugging Face Transformers / Hub</a></td><td>Sí (gratuito)</td><td>Límites de tasa en API Inference</td><td>Apache 2.0 / MIT según modelo</td></tr><tr><td>Lección 3</td><td><a href="https://github.com/anthropics/claude-code" rel="noopener" target="_blank">Claude Code (agente de código)</a></td><td>No (suscripción)</td><td>Plan Pro 20/mes</td><td>Propietario Anthropic</td></tr><tr><td>Lección 3</td><td><a href="https://www.continue.dev/" rel="noopener" target="_blank">Continue.dev (agente código open source)</a></td><td>Sí (gratuito)</td><td>Completo en local</td><td>Apache 2.0</td></tr><tr><td>Lección 3</td><td><a href="https://github.com/opencode-ai/opencode" rel="noopener" target="_blank">OpenCode (agente código open source)</a></td><td>Sí (gratuito)</td><td>Completo en local</td><td>MIT</td></tr><tr><td>Lección 4</td><td><a href="https://github.com/coreyhaines31/marketingskills" rel="noopener" target="_blank">coreyhaines31/marketingskills (repo skills)</a></td><td>Sí (gratuito)</td><td>Sin límites</td><td>MIT</td></tr><tr><td>Lección 4</td><td><a href="https://github.com/wondelai/skills" rel="noopener" target="_blank">wondelai/skills (repo skills)</a></td><td>Sí (gratuito)</td><td>Sin límites</td><td>MIT</td></tr><tr><td>Lección 4</td><td><a href="https://github.com/zubair-trabzada/ai-sales-team-claude" rel="noopener" target="_blank">zubair-trabzada/ai-sales-team-claude (repo skills)</a></td><td>Sí (gratuito)</td><td>Sin límites</td><td>MIT</td></tr><tr><td>Lección 6</td><td><a href="https://unsplash.com/" rel="noopener" target="_blank">Unsplash (banco imágenes gratis)</a></td><td>Sí (gratuito)</td><td>Descargas ilimitadas</td><td>Licencia Unsplash (libre uso comercial sin atribución obligatoria)</td></tr><tr><td>Lección 6</td><td><a href="https://www.pexels.com/" rel="noopener" target="_blank">Pexels (banco imágenes y vídeo gratis)</a></td><td>Sí (gratuito)</td><td>Descargas ilimitadas</td><td>Licencia Pexels (libre uso comercial sin atribución obligatoria)</td></tr><tr><td>Lección 6</td><td><a href="https://pixabay.com/" rel="noopener" target="_blank">Pixabay (banco imágenes y vídeo gratis)</a></td><td>Sí (gratuito)</td><td>Descargas ilimitadas</td><td>Licencia Pixabay (libre uso comercial sin atribución obligatoria)</td></tr><tr><td>Lección 6</td><td><a href="https://coverr.co/" rel="noopener" target="_blank">Coverr (banco vídeo gratis)</a></td><td>Sí (gratuito)</td><td>Descargas ilimitadas</td><td>Licencia Coverr (libre uso comercial)</td></tr><tr><td>Lección 6</td><td><a href="https://www.videezy.com/" rel="noopener" target="_blank">Videezy (banco vídeo gratis)</a></td><td>Sí (gratuito)</td><td>Descargas limitadas plan gratis</td><td>Licencia Videezy (requiere atribución en plan gratis)</td></tr><tr><td>Lección 6</td><td><a href="https://www.comfy.org/" rel="noopener" target="_blank">ComfyUI (generación imágenes local)</a></td><td>Sí (gratuito, open source)</td><td>Sin límites (hardware propio)</td><td>GPL-3.0</td></tr><tr><td>Lección 8</td><td><a href="https://www.blender.org/" rel="noopener" target="_blank">Blender (modelado 3D gratis)</a></td><td>Sí (gratuito, open source)</td><td>Sin límites</td><td>GPL-2.0-or-later</td></tr><tr><td>Lección 8</td><td><a href="https://openscad.org/" rel="noopener" target="_blank">OpenSCAD (modelado 3D por código)</a></td><td>Sí (gratuito, open source)</td><td>Sin límites</td><td>GPL-2.0</td></tr></tbody></table></div>
+<h2>Forma parte del experimento</h2>
+<ul><li>Vota la siguiente jugada de la IA en cada vídeo.</li><li>Propón estrategias en los comentarios: las mejores se prueban y se cita a quien las propuso.</li><li>Descarga los recursos y monta tu propio agente.</li><li>Comparte el experimento con quien lo vendería mejor.</li><li>Puja, si quieres llevarte el boli.</li></ul>
+<h2>¿Quieres un agente de ventas así para tu negocio?</h2>
+<a class="cta" href="/servicios/">Ver servicios</a>
+<p>Más: <a href="/formacion/">formación gratuita</a> · <a href="/recursos/">recursos</a> · <a href="/referencias/">referencias</a> · <a href="/afiliados/">transparencia</a></p>
+<footer>Aielite Lab · IA Elite — <a href="/">aielitelab.com</a> · <a href="/aviso-legal/">Aviso legal</a> · <a href="/privacidad/">Privacidad</a></footer>
+</div>
+</body>
+</html>

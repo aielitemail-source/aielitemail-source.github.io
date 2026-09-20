@@ -21,3 +21,13 @@
   declara explícitamente en cada vídeo y página, nunca oculto.
 - El merchandising de cada canal enlaza a Printful/Shopify; los precios y
   la disponibilidad reales están en esas páginas, no aquí.
+
+## Formación, recursos y transparencia
+- [Formación gratuita de IA](/formacion/)
+- [Recursos gratuitos](/recursos/)
+- [Canales y páginas de referencia](/referencias/)
+- [Transparencia y afiliados](/afiliados/)
+
+## Redes oficiales
+- [Nuestras redes](/redes/)
+- [Our networks](/en/networks/)

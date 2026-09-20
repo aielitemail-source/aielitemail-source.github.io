@@ -499,3 +499,19 @@ footer a:hover { text-shadow: 0 0 8px var(--cian); }
 .producto .comprar .flecha { opacity: 0.6; }
 .producto .comprar:hover .flecha { opacity: 1; }
 .producto .tambien { display: block; margin: -0.15rem 0 0.2rem; }
+
+/* Movil estrecho (2026-09-17): la cabecera no cabia en 375 px y cortaba el menu. */
+@media (max-width: 560px) {
+  .breadcrumb, .status, .chrome-dots { display: none; }
+  header { padding: 0.75rem 1rem; gap: 0.5rem; }
+  .header-left, .header-right { gap: 0.75rem; min-width: 0; }
+  .header-right { flex-wrap: wrap; justify-content: flex-end; }
+  .logo span { font-size: 0.95rem; }
+  .nav-tienda { font-size: 0.75rem; }
+  html, body { overflow-x: hidden; }
+}
+
+/* Menu comun (2026-09-17) */
+.header-right .nav-tienda { color: var(--text); text-decoration: none; }
+.header-right .nav-tienda[aria-current="page"] { color: var(--cian); }
+@media (max-width: 560px) { .header-right { gap: 0.6rem; } .nav-tienda { font-size: 0.68rem; letter-spacing: 0.02em; } }

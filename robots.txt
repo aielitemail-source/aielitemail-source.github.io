@@ -25,4 +25,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://aielitemail-source.github.io/sitemap.xml
+Sitemap: https://aielitelab.com/sitemap.xml
