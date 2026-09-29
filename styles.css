@@ -9,7 +9,7 @@
 }
 
 * { box-sizing: border-box; }
-html { background: var(--bg); scroll-behavior: smooth; }
+html { background: var(--bg); scroll-behavior: smooth; font-size: 18px; } /* 28-09: tipografia general +2 tallas (todo el sitio usa rem) */
 
 body {
   margin: 0;
