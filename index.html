@@ -12,6 +12,11 @@
 <meta property="og:image" content="https://aielitelab.com/assets/og/general.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://aielitelab.com/">
+<link rel="alternate" hreflang="es" href="https://aielitelab.com/">
+<link rel="alternate" hreflang="en" href="https://aielitelab.com/en/">
+<link rel="alternate" hreflang="pt" href="https://aielitelab.com/pt/">
+<link rel="alternate" hreflang="pl" href="https://aielitelab.com/pl/">
+<link rel="alternate" hreflang="x-default" href="https://aielitelab.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
@@ -32,6 +37,9 @@
   .ultimo strong { display: block; padding: 0 .8rem .8rem; font-size: .95rem; line-height: 1.3; }
   .ultimo:hover, .ultimo:focus-visible { box-shadow: 0 0 24px -6px var(--accent); }
   @media (max-width: 860px) { .portada-secciones .gpanel { min-height: 300px; } }
+  .idiomas { display: inline-flex; gap: .15rem; }
+  .idiomas a { padding: .2rem .4rem; border-radius: 6px; font-size: .7rem; text-decoration: none; color: oklch(0.80 0.03 260); }
+  .idiomas a[aria-current] { color: var(--bg); background: var(--cian); }
 </style>
 </head>
 <body><!--aie-sec--><style>#aie-sec{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:center;padding:8px 12px;background:#0b0b10;color:#fff;font:600 14px/1.2 system-ui,-apple-system,Segoe UI,sans-serif}#aie-sec a{color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3)}#aie-sec a.dest{background:#ffd23f;color:#111;border-color:#ffd23f;font-weight:800}#aie-sec a:hover{filter:brightness(1.2)}</style><div id="aie-sec"><a href="/">Aielite Lab</a><a href="/iaelite-news/">IaElite News</a></div><!--/aie-sec-->
@@ -51,6 +59,7 @@
     <a class="nav-tienda mono" href="/tomeu/">Tomeu</a>
     <a class="nav-tienda mono" href="/tienda/">Tienda</a>
     <a class="nav-tienda mono" href="/servicios/">Servicios</a>
+    <span class="idiomas mono" aria-label="Idioma"><a href="/" hreflang="es" data-idioma="es" aria-current="true">ES</a><a href="/en/" hreflang="en" data-idioma="en">EN</a><a href="/pt/" hreflang="pt" data-idioma="pt">PT</a><a href="/pl/" hreflang="pl" data-idioma="pl">PL</a></span>
     <span class="sys-clock mono" id="sys-clock" aria-hidden="true">SYS TIME 00:00:00<span class="ms">.000</span></span>
     <span class="status mono">Sistema en línea</span>
   </div>
@@ -161,5 +170,6 @@
 </footer>
 
 <script src="/clock.js"></script>
+<script src="/idioma.js"></script>
 </body>
 </html>
