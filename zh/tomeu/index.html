@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tomeu de Palma — 机器人技术 · InMoov · IA</title>
+<meta name="description" content="Tomeu de Palma：马略卡岛首批人形机器人之一。开源 (InMoov)，3D 打印，搭载 AI。AI Elite Lab 项目，源自帕尔马的一个车间。">
+<meta property="og:title" content="Tomeu de Palma · 机器人技术 · InMoov">
+<meta property="og:description" content="马略卡岛首批人形机器人之一。开源，3D 打印，搭载 AI。寻找赞助商。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://aielitelab.com/zh/tomeu/">
+<meta property="og:image" content="https://aielitelab.com/assets/og/general.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aielitelab.com/zh/tomeu/">
+<link rel="alternate" hreflang="es" href="https://aielitelab.com/tomeu/">
+<link rel="alternate" hreflang="en" href="https://aielitelab.com/en/tomeu/">
+<link rel="alternate" hreflang="fr" href="https://aielitelab.com/fr/tomeu/">
+<link rel="alternate" hreflang="de" href="https://aielitelab.com/de/tomeu/">
+<link rel="alternate" hreflang="pt" href="https://aielitelab.com/pt/tomeu/">
+<link rel="alternate" hreflang="it" href="https://aielitelab.com/it/tomeu/">
+<link rel="alternate" hreflang="ru" href="https://aielitelab.com/ru/tomeu/">
+<link rel="alternate" hreflang="zh-Hans" href="https://aielitelab.com/zh/tomeu/">
+<link rel="alternate" hreflang="ja" href="https://aielitelab.com/ja/tomeu/">
+<link rel="alternate" hreflang="ar" href="https://aielitelab.com/ar/tomeu/">
+<link rel="alternate" hreflang="pl" href="https://aielitelab.com/pl/tomeu/">
+<link rel="alternate" hreflang="nl" href="https://aielitelab.com/nl/tomeu/">
+<link rel="alternate" hreflang="tr" href="https://aielitelab.com/tr/tomeu/">
+<link rel="alternate" hreflang="cs" href="https://aielitelab.com/cs/tomeu/">
+<link rel="alternate" hreflang="hu" href="https://aielitelab.com/hu/tomeu/">
+<link rel="alternate" hreflang="ko" href="https://aielitelab.com/ko/tomeu/">
+<link rel="alternate" hreflang="x-default" href="https://aielitelab.com/tomeu/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<style>
+/* Sección Tomeu — reutiliza la identidad del sitio (cian/magenta/ámbar). Componentes con prefijo tp-. */
+.tp-wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.tp-sec{padding:2.6rem 0;border-top:1px solid oklch(0.85 0.19 200 / 0.18)}
+.tp-eyebrow{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cian);margin:0 0 .8rem}
+.tp-eyebrow::before{content:'// ';opacity:.6}
+.tp-h2{font-family:Orbitron,sans-serif;font-weight:800;font-size:clamp(1.5rem,4vw,2.1rem);margin:0 0 .4rem;color:var(--text);letter-spacing:.01em}
+.tp-sec p{color:var(--text-dim);font-size:1.02rem;line-height:1.65;max-width:66ch;margin:.7rem 0 0}
+.tp-sec p b{color:var(--text)}
+.tp-quote{font-family:"Space Grotesk",sans-serif;font-style:italic;color:var(--text-dim);border-left:2px solid var(--ambar);padding-left:16px;margin:1.4rem 0 0;max-width:60ch}
+.tp-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:1.6rem}
+.tp-btn{font-family:"JetBrains Mono",monospace;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:.7rem 1.1rem;border-radius:4px;border:1px solid var(--cian);color:var(--cian);background:transparent;cursor:pointer;transition:.15s var(--ease,ease)}
+.tp-btn:hover{background:oklch(0.85 0.19 200 / 0.12);box-shadow:0 0 14px oklch(0.85 0.19 200 / 0.4)}
+.tp-btn.fill{background:var(--cian);color:#061016;border-color:var(--cian)}
+.tp-btn.amber{border-color:var(--ambar);color:var(--ambar)}
+.tp-btn.amber:hover{background:oklch(0.82 0.19 70 / 0.12);box-shadow:0 0 14px oklch(0.82 0.19 70 / 0.35)}
+
+/* media placeholders */
+.tp-media{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:1.4rem}
+.tp-ph{position:relative;aspect-ratio:16/10;border:1px solid oklch(0.85 0.19 200 / 0.3);border-radius:8px;background:
+  linear-gradient(135deg,oklch(0.16 0.03 265),oklch(0.12 0.02 270));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;color:var(--text-dim);text-align:center;padding:14px;overflow:hidden}
+.tp-ph .ic{font-size:1.6rem}
+.tp-ph small{font-family:"JetBrains Mono",monospace;font-size:.66rem;letter-spacing:.08em;color:var(--cian);text-transform:uppercase}
+.tp-ph.v::after{content:'▶';position:absolute;font-size:1.6rem;color:oklch(0.85 0.19 200 / 0.8)}
+.tp-ph img,.tp-ph video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* ficha técnica */
+.tp-spec{font-family:"JetBrains Mono",monospace;font-size:.88rem;margin-top:1.4rem;border:1px solid oklch(0.85 0.19 200 / 0.25);border-radius:8px;overflow:hidden}
+.tp-spec .r{display:flex;justify-content:space-between;gap:16px;padding:.68rem 1rem;border-top:1px solid oklch(0.85 0.19 200 / 0.14)}
+.tp-spec .r:first-child{border-top:none}
+.tp-spec .k{color:var(--text-dim);text-transform:uppercase;letter-spacing:.06em;font-size:.72rem}
+.tp-spec .val{text-align:right;color:var(--text);font-variant-numeric:tabular-nums}
+.tp-spec .val b{color:var(--cian)}
+
+/* estado chips */
+.tp-status{list-style:none;padding:0;margin:1.4rem 0 0;display:grid;gap:10px}
+.tp-status li{display:flex;align-items:center;gap:12px;border:1px solid oklch(0.85 0.19 200 / 0.18);border-radius:6px;padding:.65rem .9rem;background:oklch(0.14 0.02 270 / 0.6)}
+.tp-chip{font-family:"JetBrains Mono",monospace;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .55rem;border-radius:3px;white-space:nowrap}
+.tp-chip.ok{background:oklch(0.85 0.19 200 / 0.16);color:var(--cian)}
+.tp-chip.prog{background:oklch(0.82 0.19 70 / 0.16);color:var(--ambar)}
+.tp-chip.warn{background:oklch(0.72 0.26 340 / 0.16);color:var(--magenta)}
+.tp-chip.pend{background:oklch(0.75 0.03 260 / 0.14);color:var(--text-dim)}
+.tp-status .lb{font-family:"Space Grotesk",sans-serif;color:var(--text)}
+
+/* cards patrocinio / enlaces */
+.tp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:1.4rem}
+.tp-card{border:1px solid oklch(0.85 0.19 200 / 0.2);border-radius:8px;padding:1.1rem;background:oklch(0.14 0.02 270 / 0.6)}
+.tp-card.hot{border-color:var(--magenta)}
+.tp-card .tag{font-family:"JetBrains Mono",monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ambar)}
+.tp-card h3{font-family:Orbitron,sans-serif;font-size:1rem;margin:.3rem 0 .4rem;color:var(--text)}
+.tp-card p{margin:0;font-size:.9rem;color:var(--text-dim);max-width:none}
+.tp-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.3rem}
+.tp-links a{font-family:"JetBrains Mono",monospace;font-size:.76rem;text-decoration:none;color:var(--cian);border:1px solid oklch(0.85 0.19 200 / 0.3);border-radius:999px;padding:.4rem .8rem}
+.tp-links a:hover{box-shadow:0 0 12px oklch(0.85 0.19 200 / 0.35)}
+
+/* timeline actualizaciones */
+.tp-log{list-style:none;padding:0;margin:1.3rem 0 0}
+.tp-log li{display:grid;grid-template-columns:minmax(96px,auto) 1fr;gap:16px;padding:.8rem 0;border-top:1px solid oklch(0.85 0.19 200 / 0.14)}
+.tp-log time{font-family:"JetBrains Mono",monospace;font-size:.78rem;color:var(--ambar);font-variant-numeric:tabular-nums}
+.tp-log .w{color:var(--text-dim)} .tp-log .w b{color:var(--text)}
+
+/* EXPEDIENTE CLASIFICADO (secretismo) */
+.tp-secret{margin-top:1.4rem;border:1px solid var(--magenta);border-radius:8px;background:
+  repeating-linear-gradient(45deg,oklch(0.14 0.03 320 / 0.5),oklch(0.14 0.03 320 / 0.5) 12px,oklch(0.16 0.04 320 / 0.5) 12px,oklch(0.16 0.04 320 / 0.5) 24px);padding:1.2rem 1.2rem 1.4rem}
+.tp-secret .hd{font-family:"JetBrains Mono",monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-bottom:1px dashed oklch(0.72 0.26 340 / 0.5);padding-bottom:.6rem;margin-bottom:.9rem}
+.tp-secret .line{font-family:"JetBrains Mono",monospace;font-size:.86rem;color:var(--text);margin:.5rem 0;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.tp-secret .line .lab{color:var(--text-dim);min-width:120px}
+.tp-redacted{background:var(--text);color:transparent;border-radius:2px;padding:0 .3em;user-select:none;letter-spacing:.1em}
+.tp-secret .note{font-family:"Space Grotesk",sans-serif;font-style:italic;color:var(--text-dim);margin-top:.8rem;font-size:.9rem}
+
+.tp-foot-note{font-family:"JetBrains Mono",monospace;font-size:.68rem;color:var(--text-dim);text-align:center;padding:1.2rem 20px}
+.tp-contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:1rem}
+.tp-copy{font-family:"JetBrains Mono",monospace;font-size:.84rem;background:transparent;border:1px solid oklch(0.85 0.19 200 / 0.3);border-radius:4px;padding:.5rem .7rem;color:var(--text);cursor:pointer}
+.tp-copy:hover{border-color:var(--cian);box-shadow:0 0 12px oklch(0.85 0.19 200 / 0.3)}
+</style>
+<meta name="traduccion" content="auto">
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="scanline" aria-hidden="true"></div>
+
+<div id="aie-sec" style="display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:center;padding:8px 12px;background:#0b0b10;color:#fff;font:600 14px/1.2 system-ui,-apple-system,Segoe UI,sans-serif">
+  <a href="/zh/" style="color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3)">Aielite Lab</a>
+  <a href="/zh/tomeu/" style="color:#111;text-decoration:none;padding:6px 14px;border-radius:999px;background:#ffd23f;border:1px solid #ffd23f;font-weight:800">Tomeu de Palma</a>
+  <a href="/zh/taller/" style="color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3)">Taller Correcaminos</a>
+  <a href="/zh/iaelite-news/" style="color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3)">IaElite News</a>
+  <a href="/reto-boli/" style="color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3)">圆珠笔挑战</a>
+</div>
+
+<header>
+  <div class="header-left">
+    <div class="chrome-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    <a href="/zh/" class="logo"><span>IA ELITE</span></a>
+    <span class="breadcrumb mono">/ TOMEU DE PALMA</span>
+  </div>
+  <div class="header-right">
+    <a class="nav-tienda mono" href="#patrocinio" style="color:var(--text)">赞助</a>
+    <span class="sys-clock mono" id="sys-clock" aria-hidden="true">SYS TIME 00:00:00<span class="ms">.000</span></span>
+    <span class="status mono">建设中</span>
+  </div>
+</header>
+
+<section class="hero hero--compact">
+  <span class="eyebrow mono">机器人技术 · InMoov · 马略卡</span>
+  <h1 data-text="Tomeu de Palma">Tomeu de Palma</h1>
+  <div class="hero-divider" aria-hidden="true"></div>
+  <p>马略卡岛首批人形机器人之一。开源，3D 打印，并渴望说马略卡语。</p>
+  <div class="badges mono" role="list">
+    <span role="listitem">⬡ 开源 (InMoov)</span>
+    <span role="listitem">⬡ 帕尔马制造</span>
+    <span role="listitem">⬡ 会说马略卡语</span>
+    <span role="listitem">⬡ AI · Gemini Live</span>
+  </div>
+</section>
+
+<div class="tp-wrap">
+
+  <section class="tp-sec" id="videos">
+    <p class="tp-eyebrow">视频</p>
+    <h2 class="tp-h2">Tomeu 动起来</h2>
+    <p>我们正在用视频记录过程。很快我们将在这里上传 <b>首批 InMoov 完成版视频</b>：它的首个动作、首句马略卡语以及车间巡礼。</p>
+    <div class="tp-media">
+      <!-- Sustituir por <video controls poster="/tomeu/media/poster1.jpg"><source src="/tomeu/media/tomeu1.mp4" type="video/mp4"></video> -->
+      <div class="tp-ph v"><small>视频 · 首个动作</small></div>
+      <div class="tp-ph v"><small>视频 · 首句</small></div>
+      <div class="tp-ph v"><small>视频 · 车间</small></div>
+    </div>
+    <div class="tp-cta">
+      <a class="tp-btn fill" href="https://www.tiktok.com/@lowcostenergyrevolution" rel="noopener" target="_blank">在 TikTok 上观看频道</a>
+    </div>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">相册</p>
+    <h2 class="tp-h2">InMoov 的照片</h2>
+    <p>前后对比：从一堆零件到组装完成的人形机器人。我们将陆续添加 <b>Tomeu 完成版</b>，以及车间和每次进展的照片。</p>
+    <div class="tp-media">
+      <!-- Sustituir cada .tp-ph por <img src="/tomeu/media/foto1.jpg" alt="..."> cuando haya fotos -->
+      <div class="tp-ph"><span class="ic">🤖</span><small>照片 · Tomeu 完成版</small></div>
+      <div class="tp-ph"><span class="ic">🧠</span><small>照片 · 头部</small></div>
+      <div class="tp-ph"><span class="ic">🖐️</span><small>照片 · 手部</small></div>
+      <div class="tp-ph"><span class="ic">🛠️</span><small>照片 · 车间</small></div>
+    </div>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">是什么</p>
+    <h2 class="tp-h2">一款带马略卡口音的 InMoov</h2>
+    <p>Tomeu 是一款 <b>InMoov</b>，世界上最知名的开源人形机器人。 <b>它会移动、说话和看见</b>：拥有手臂、手部、躯干和面部，通过摄像头识别人员，并借助多个 AI 模型进行对话。主要模型是 <b>Gemini Live</b>，配备本地模型使其能够 <b>甚至在没有互联网的情况下</b>。它大部分时间说马略卡语——以及带马略卡口音的西班牙语——此外还支持二十多种语言。</p>
+    <div class="tp-spec">
+      <div class="r"><span class="k">型号</span><span class="val">InMoov · 开源</span></div>
+      <div class="r"><span class="k">高度</span><span class="val"><b>180</b> cm</span></div>
+      <div class="r"><span class="k">材料</span><span class="val">PLA · PETG · ABS</span></div>
+      <div class="r"><span class="k">已打印部件</span><span class="val"><b>200+</b></span></div>
+      <div class="r"><span class="k">打印时长</span><span class="val">~<b>500</b> h</span></div>
+      <div class="r"><span class="k">语言</span><span class="val">马略卡语 + <b>25</b></span></div>
+      <div class="r"><span class="k">AI</span><span class="val">Gemini Live + local (offline)</span></div>
+      <div class="r"><span class="k">感知</span><span class="val">摄像头 · 识别人员</span></div>
+    </div>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">我们在哪里</p>
+    <h2 class="tp-h2">建造进度</h2>
+    <p>仅用两周工作时间。我将在几天内打印完成；完全完成将在几周内。</p>
+    <ul class="tp-status">
+      <li><span class="tp-chip ok">已完成</span><span class="lb">躯干已组装</span></li>
+      <li><span class="tp-chip prog">几乎完成</span><span class="lb">头部 — 几乎完成</span></li>
+      <li><span class="tp-chip prog">进行中</span><span class="lb">手臂和手</span></li>
+      <li><span class="tp-chip warn">障碍</span><span class="lb">电子 — 目前最大的阻碍</span></li>
+      <li><span class="tp-chip pend">待完成</span><span class="lb">软件与智能</span></li>
+    </ul>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">为何特别</p>
+    <h2 class="tp-h2">世界上鲜有同类</h2>
+    <p>有 <b>极少数功能正常的 InMoov</b> 在全球范围内，拥有运行中人形机器人的实验室也屈指可数。Tomeu 将成为马略卡岛——也是西班牙——首批制造的人形机器人之一，出自一个不起眼的小作坊，却怀揣着巨大的雄心。</p>
+    <p class="tp-quote">«他们在帕尔马的一个车间里一片片地组装我。我还缺少大脑和神经，但我已经知道我想成为什么：岛上一个普通的邻居，好奇且健谈。» — Tomeu</p>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">未来规划</p>
+    <h2 class="tp-h2">Tomeu 档案 · 限制访问</h2>
+    <div class="tp-secret">
+      <div class="hd"><span>EXPEDIENTE: TOMEU-DP</span><span>CLASIFICADO ◆ NIVEL 2</span></div>
+      <div class="line"><span class="lab">当前阶段</span><span>身体建造（躯干 + 头部）</span></div>
+      <div class="line"><span class="lab">下一阶段</span><span>电子 + AI → "觉醒"</span></div>
+      <div class="line"><span class="lab">目标</span><span>机器人奥运会 · 代表 <b style="color:var(--ambar)">España</b></span></div>
+      <div class="line"><span class="lab">设计改进</span><span class="tp-redacted">█████████████████</span> <span style="color:var(--magenta)">[保密至发布]</span></div>
+      <div class="line"><span class="lab">阶段 2</span><span class="tp-redacted">████████</span> 扩展 <span class="tp-redacted">██████████</span></div>
+      <p class="note">有些东西我们更愿意当面展示。如果你想了解更多……来车间吧。</p>
+    </div>
+  </section>
+
+  <section class="tp-sec" id="patrocinio">
+    <p class="tp-eyebrow">你可以如何帮助</p>
+    <h2 class="tp-h2">我们正在寻找赞助商和合作伙伴</h2>
+    <p>我们从零开始：只有几台打印机和我们的双手。我们正在寻找希望 <b>加入团队</b> 的 Tomeu。</p>
+    <div class="tp-grid">
+      <div class="tp-card hot"><span class="tag">最紧急</span><h3>电子</h3><p>舵机、控制器、摄像头、麦克风、电池……帮助我们让它“活”起来。</p></div>
+      <div class="tp-card"><span class="tag">高度重视</span><h3>3D 打印</h3><p>耗材、工具和资源，以便继续打印。</p></div>
+      <div class="tp-card"><span class="tag">汇总</span><h3>传播与联系</h3><p>媒体、社区和企业，愿意陪伴该项目。</p></div>
+    </div>
+    <p>作为回报， <b>你的品牌随 Tomeu 同行</b>：你的形象（贴纸、T恤或海报）出现在机器人本身，在我们的传播中被提及，并展现为一个创新公司在精英项目中的形象。</p>
+    <div class="tp-cta">
+      <button class="tp-btn amber tp-copy" data-copy="aielitelab@aielitelab.com">✉ aielitelab@aielitelab.com</button>
+      <button class="tp-btn tp-copy" data-copy="667356983">☎ 667 356 983</button>
+    </div>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">更新</p>
+    <h2 class="tp-h2">Tomeu 的日志</h2>
+    <ul class="tp-log">
+      <li><time datetime="2026-10-06">06·10·26</time><span class="w"><b>躯干已组装，头部几乎完成。</b> 手臂和手部正在制作中。开始寻找电子部分的赞助商。</span></li>
+    </ul>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">相关链接</p>
+    <h2 class="tp-h2">探索 AI Elite Lab</h2>
+    <div class="tp-links">
+      <a href="/zh/">首页</a>
+      <a href="/zh/taller/">Taller Correcaminos</a>
+      <a href="/zh/iaelite-news/">IaElite News</a>
+      <a href="/reto-boli/">圆珠笔挑战</a>
+      <a href="/zh/tienda/">商店</a>
+      <a href="/zh/redes/">我们的网络</a>
+    </div>
+  </section>
+
+  <section class="tp-sec" id="contacto">
+    <p class="tp-eyebrow">联系我们</p>
+    <h2 class="tp-h2">来认识 Tomeu</h2>
+    <p>你可以前往帕尔马的工作室近距离参观。如有任何需要，请联系 José María（AI Elite Lab · Taller Correcaminos）。</p>
+    <div class="tp-contact">
+      <button class="tp-copy" data-copy="aielitelab@aielitelab.com">✉ aielitelab@aielitelab.com</button>
+      <button class="tp-copy" data-copy="667356983">☎ 667 356 983</button>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>AI Elite Lab — Tomeu de Palma · <a href="/zh/">aielitelab.com</a> · <a href="/zh/taller/">Taller Correcaminos</a> · <a href="https://www.tiktok.com/@lowcostenergyrevolution" rel="noopener" target="_blank">TikTok</a></p>
+  <nav aria-label="法律">
+    <a href="/zh/aviso-legal/">法律声明</a>
+    <a href="/zh/privacidad/">隐私政策</a>
+    <a href="/zh/cookies/">Cookies</a>
+    <a href="/zh/contacto/">联系我们</a>
+  </nav>
+  <p class="tp-foot-note">页面建设中 · 随着每次进展不断扩展</p>
+</footer>
+
+<script src="/clock.js"></script>
+<script>
+document.querySelectorAll('.tp-copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=b.getAttribute('data-copy'),old=b.textContent;
+    function done(){b.textContent='¡Copiado!';setTimeout(function(){b.textContent=old},1400)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(done)}else{done()}
+  });
+});
+</script>
+<script src="/idioma.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tomeu de Palma — Robotica · InMoov · IA</title>
+<meta name="description" content="Tomeu de Palma: een van de eerste humanoïde robots gefabriceerd op Mallorca. Open source (InMoov), 3D-geprint, met AI. Project van AI Elite Lab, vanuit een werkplaats in Palma.">
+<meta property="og:title" content="Tomeu de Palma · Robotica · InMoov">
+<meta property="og:description" content="Een van de eerste humanoïdes gefabriceerd op Mallorca. Open source, 3D-geprint, met AI. Zoekt sponsors.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://aielitelab.com/nl/tomeu/">
+<meta property="og:image" content="https://aielitelab.com/assets/og/general.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aielitelab.com/nl/tomeu/">
+<link rel="alternate" hreflang="es" href="https://aielitelab.com/tomeu/">
+<link rel="alternate" hreflang="en" href="https://aielitelab.com/en/tomeu/">
+<link rel="alternate" hreflang="fr" href="https://aielitelab.com/fr/tomeu/">
+<link rel="alternate" hreflang="de" href="https://aielitelab.com/de/tomeu/">
+<link rel="alternate" hreflang="pt" href="https://aielitelab.com/pt/tomeu/">
+<link rel="alternate" hreflang="it" href="https://aielitelab.com/it/tomeu/">
+<link rel="alternate" hreflang="ru" href="https://aielitelab.com/ru/tomeu/">
+<link rel="alternate" hreflang="zh-Hans" href="https://aielitelab.com/zh/tomeu/">
+<link rel="alternate" hreflang="ja" href="https://aielitelab.com/ja/tomeu/">
+<link rel="alternate" hreflang="ar" href="https://aielitelab.com/ar/tomeu/">
+<link rel="alternate" hreflang="pl" href="https://aielitelab.com/pl/tomeu/">
+<link rel="alternate" hreflang="nl" href="https://aielitelab.com/nl/tomeu/">
+<link rel="alternate" hreflang="tr" href="https://aielitelab.com/tr/tomeu/">
+<link rel="alternate" hreflang="cs" href="https://aielitelab.com/cs/tomeu/">
+<link rel="alternate" hreflang="hu" href="https://aielitelab.com/hu/tomeu/">
+<link rel="alternate" hreflang="ko" href="https://aielitelab.com/ko/tomeu/">
+<link rel="alternate" hreflang="x-default" href="https://aielitelab.com/tomeu/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<style>
+/* Sección Tomeu — reutiliza la identidad del sitio (cian/magenta/ámbar). Componentes con prefijo tp-. */
+.tp-wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.tp-sec{padding:2.6rem 0;border-top:1px solid oklch(0.85 0.19 200 / 0.18)}
+.tp-eyebrow{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cian);margin:0 0 .8rem}
+.tp-eyebrow::before{content:'// ';opacity:.6}
+.tp-h2{font-family:Orbitron,sans-serif;font-weight:800;font-size:clamp(1.5rem,4vw,2.1rem);margin:0 0 .4rem;color:var(--text);letter-spacing:.01em}
+.tp-sec p{color:var(--text-dim);font-size:1.02rem;line-height:1.65;max-width:66ch;margin:.7rem 0 0}
+.tp-sec p b{color:var(--text)}
+.tp-quote{font-family:"Space Grotesk",sans-serif;font-style:italic;color:var(--text-dim);border-left:2px solid var(--ambar);padding-left:16px;margin:1.4rem 0 0;max-width:60ch}
+.tp-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:1.6rem}
+.tp-btn{font-family:"JetBrains Mono",monospace;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:.7rem 1.1rem;border-radius:4px;border:1px solid var(--cian);color:var(--cian);background:transparent;cursor:pointer;transition:.15s var(--ease,ease)}
+.tp-btn:hover{background:oklch(0.85 0.19 200 / 0.12);box-shadow:0 0 14px oklch(0.85 0.19 200 / 0.4)}
+.tp-btn.fill{background:var(--cian);color:#061016;border-color:var(--cian)}
+.tp-btn.amber{border-color:var(--ambar);color:var(--ambar)}
+.tp-btn.amber:hover{background:oklch(0.82 0.19 70 / 0.12);box-shadow:0 0 14px oklch(0.82 0.19 70 / 0.35)}
+
+/* media placeholders */
+.tp-media{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:1.4rem}
+.tp-ph{position:relative;aspect-ratio:16/10;border:1px solid oklch(0.85 0.19 200 / 0.3);border-radius:8px;background:
+  linear-gradient(135deg,oklch(0.16 0.03 265),oklch(0.12 0.02 270));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;color:var(--text-dim);text-align:center;padding:14px;overflow:hidden}
+.tp-ph .ic{font-size:1.6rem}
+.tp-ph small{font-family:"JetBrains Mono",monospace;font-size:.66rem;letter-spacing:.08em;color:var(--cian);text-transform:uppercase}
+.tp-ph.v::after{content:'▶';position:absolute;font-size:1.6rem;color:oklch(0.85 0.19 200 / 0.8)}
+.tp-ph img,.tp-ph video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* ficha técnica */
+.tp-spec{font-family:"JetBrains Mono",monospace;font-size:.88rem;margin-top:1.4rem;border:1px solid oklch(0.85 0.19 200 / 0.25);border-radius:8px;overflow:hidden}
+.tp-spec .r{display:flex;justify-content:space-between;gap:16px;padding:.68rem 1rem;border-top:1px solid oklch(0.85 0.19 200 / 0.14)}
+.tp-spec .r:first-child{border-top:none}
+.tp-spec .k{color:var(--text-dim);text-transform:uppercase;letter-spacing:.06em;font-size:.72rem}
+.tp-spec .val{text-align:right;color:var(--text);font-variant-numeric:tabular-nums}
+.tp-spec .val b{color:var(--cian)}
+
+/* estado chips */
+.tp-status{list-style:none;padding:0;margin:1.4rem 0 0;display:grid;gap:10px}
+.tp-status li{display:flex;align-items:center;gap:12px;border:1px solid oklch(0.85 0.19 200 / 0.18);border-radius:6px;padding:.65rem .9rem;background:oklch(0.14 0.02 270 / 0.6)}
+.tp-chip{font-family:"JetBrains Mono",monospace;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .55rem;border-radius:3px;white-space:nowrap}
+.tp-chip.ok{background:oklch(0.85 0.19 200 / 0.16);color:var(--cian)}
+.tp-chip.prog{background:oklch(0.82 0.19 70 / 0.16);color:var(--ambar)}
+.tp-chip.warn{background:oklch(0.72 0.26 340 / 0.16);color:var(--magenta)}
+.tp-chip.pend{background:oklch(0.75 0.03 260 / 0.14);color:var(--text-dim)}
+.tp-status .lb{font-family:"Space Grotesk",sans-serif;color:var(--text)}
+
+/* cards patrocinio / enlaces */
+.tp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:1.4rem}
+.tp-card{border:1px solid oklch(0.85 0.19 200 / 0.2);border-radius:8px;padding:1.1rem;background:oklch(0.14 0.02 270 / 0.6)}
+.tp-card.hot{border-color:var(--magenta)}
+.tp-card .tag{font-family:"JetBrains Mono",monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ambar)}
+.tp-card h3{font-family:Orbitron,sans-serif;font-size:1rem;margin:.3rem 0 .4rem;color:var(--text)}
+.tp-card p{margin:0;font-size:.9rem;color:var(--text-dim);max-width:none}
+.tp-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.3rem}
+.tp-links a{font-family:"JetBrains Mono",monospace;font-size:.76rem;text-decoration:none;color:var(--cian);border:1px solid oklch(0.85 0.19 200 / 0.3);border-radius:999px;padding:.4rem .8rem}
+.tp-links a:hover{box-shadow:0 0 12px oklch(0.85 0.19 200 / 0.35)}
+
+/* timeline actualizaciones */
+.tp-log{list-style:none;padding:0;margin:1.3rem 0 0}
+.tp-log li{display:grid;grid-template-columns:minmax(96px,auto) 1fr;gap:16px;padding:.8rem 0;border-top:1px solid oklch(0.85 0.19 200 / 0.14)}
+.tp-log time{font-family:"JetBrains Mono",monospace;font-size:.78rem;color:var(--ambar);font-variant-numeric:tabular-nums}
+.tp-log .w{color:var(--text-dim)} .tp-log .w b{color:var(--text)}
+
+/* EXPEDIENTE CLASIFICADO (secretismo) */
+.tp-secret{margin-top:1.4rem;border:1px solid var(--magenta);border-radius:8px;background:
+  repeating-linear-gradient(45deg,oklch(0.14 0.03 320 / 0.5),oklch(0.14 0.03 320 / 0.5) 12px,oklch(0.16 0.04 320 / 0.5) 12px,oklch(0.16 0.04 320 / 0.5) 24px);padding:1.2rem 1.2rem 1.4rem}
+.tp-secret .hd{font-family:"JetBrains Mono",monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-bottom:1px dashed oklch(0.72 0.26 340 / 0.5);padding-bottom:.6rem;margin-bottom:.9rem}
+.tp-secret .line{font-family:"JetBrains Mono",monospace;font-size:.86rem;color:var(--text);margin:.5rem 0;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.tp-secret .line .lab{color:var(--text-dim);min-width:120px}
+.tp-redacted{background:var(--text);color:transparent;border-radius:2px;padding:0 .3em;user-select:none;letter-spacing:.1em}
+.tp-secret .note{font-family:"Space Grotesk",sans-serif;font-style:italic;color:var(--text-dim);margin-top:.8rem;font-size:.9rem}
+
+.tp-foot-note{font-family:"JetBrains Mono",monospace;font-size:.68rem;color:var(--text-dim);text-align:center;padding:1.2rem 20px}
+.tp-contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:1rem}
+.tp-copy{font-family:"JetBrains Mono",monospace;font-size:.84rem;background:transparent;border:1px solid oklch(0.85 0.19 200 / 0.3);border-radius:4px;padding:.5rem .7rem;color:var(--text);cursor:pointer}
+.tp-copy:hover{border-color:var(--cian);box-shadow:0 0 12px oklch(0.85 0.19 200 / 0.3)}
+</style>
+<meta name="traduccion" content="auto">
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="scanline" aria-hidden="true"></div>
+
+<div id="aie-sec" style="display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:center;padding:8px 12px;background:#0b0b10;color:#fff;font:600 14px/1.2 system-ui,-apple-system,Segoe UI,sans-serif">
+  <a href="/nl/" style="color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3)">Aielite Lab</a>
+  <a href="/nl/tomeu/" style="color:#111;text-decoration:none;padding:6px 14px;border-radius:999px;background:#ffd23f;border:1px solid #ffd23f;font-weight:800">Tomeu de Palma</a>
+  <a href="/nl/taller/" style="color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3)">Taller Correcaminos</a>
+  <a href="/nl/iaelite-news/" style="color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3)">IaElite News</a>
+  <a href="/reto-boli/" style="color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3)">Penuitdaging</a>
+</div>
+
+<header>
+  <div class="header-left">
+    <div class="chrome-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    <a href="/nl/" class="logo"><span>IA ELITE</span></a>
+    <span class="breadcrumb mono">/ TOMEU DE PALMA</span>
+  </div>
+  <div class="header-right">
+    <a class="nav-tienda mono" href="#patrocinio" style="color:var(--text)">Sponsoren</a>
+    <span class="sys-clock mono" id="sys-clock" aria-hidden="true">SYS TIME 00:00:00<span class="ms">.000</span></span>
+    <span class="status mono">In aanbouw</span>
+  </div>
+</header>
+
+<section class="hero hero--compact">
+  <span class="eyebrow mono">Robotica · InMoov · Mallorca</span>
+  <h1 data-text="Tomeu de Palma">Tomeu de Palma</h1>
+  <div class="hero-divider" aria-hidden="true"></div>
+  <p>Een van de eerste humanoïde robots gefabriceerd op Mallorca. Open source, 3D-geprint, en met de wens om Mallorquins te spreken.</p>
+  <div class="badges mono" role="list">
+    <span role="listitem">⬡ Open source (InMoov)</span>
+    <span role="listitem">⬡ Gemaakt in Palma</span>
+    <span role="listitem">⬡ Spreekt Mallorquins</span>
+    <span role="listitem">⬡ AI · Gemini Live</span>
+  </div>
+</section>
+
+<div class="tp-wrap">
+
+  <section class="tp-sec" id="videos">
+    <p class="tp-eyebrow">Video's</p>
+    <h2 class="tp-h2">Tomeu in beweging</h2>
+    <p>We volgen het proces op video. Binnenkort uploaden we hier de <b>eerste video's van de voltooide InMoov</b>: zijn eerste beweging, zijn eerste zin in het Mallorquins en een rondleiding door de werkplaats.</p>
+    <div class="tp-media">
+      <!-- Sustituir por <video controls poster="/tomeu/media/poster1.jpg"><source src="/tomeu/media/tomeu1.mp4" type="video/mp4"></video> -->
+      <div class="tp-ph v"><small>Video · eerste beweging</small></div>
+      <div class="tp-ph v"><small>Video · eerste zin</small></div>
+      <div class="tp-ph v"><small>Video · de werkplaats</small></div>
+    </div>
+    <div class="tp-cta">
+      <a class="tp-btn fill" href="https://www.tiktok.com/@lowcostenergyrevolution" rel="noopener" target="_blank">Bekijk het kanaal op TikTok</a>
+    </div>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">Galerij</p>
+    <h2 class="tp-h2">Foto's van de InMoov</h2>
+    <p>Het voor en na: van een berg stukken tot de gemonteerde humanoïde. We zullen foto's toevoegen van <b>Tomeu voltooid</b>, van de werkplaats en van elke voortgang.</p>
+    <div class="tp-media">
+      <!-- Sustituir cada .tp-ph por <img src="/tomeu/media/foto1.jpg" alt="..."> cuando haya fotos -->
+      <div class="tp-ph"><span class="ic">🤖</span><small>Foto · Tomeu voltooid</small></div>
+      <div class="tp-ph"><span class="ic">🧠</span><small>Foto · hoofd</small></div>
+      <div class="tp-ph"><span class="ic">🖐️</span><small>Foto · handen</small></div>
+      <div class="tp-ph"><span class="ic">🛠️</span><small>Foto · de werkplaats</small></div>
+    </div>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">Wat is het</p>
+    <h2 class="tp-h2">Een InMoov met een Mallorquins accent</h2>
+    <p>Tomeu is een <b>InMoov</b>, de bekendste open-source humanoïde robot ter wereld. <b>Hij beweegt, spreekt en ziet</b>: armen, handen, torso en gezicht, herkent mensen via de camera en converseert dankzij verschillende AI-modellen. De belangrijkste is <b>Gemini Live</b>, met lokale modellen die hem in staat stellen te functioneren <b>zelfs zonder internet</b>. Hij spreekt meestal Mallorquins —en Spaans met een Mallorquins accent— naast meer dan twintig talen.</p>
+    <div class="tp-spec">
+      <div class="r"><span class="k">Model</span><span class="val">InMoov · open source</span></div>
+      <div class="r"><span class="k">Hoogte</span><span class="val"><b>180</b> cm</span></div>
+      <div class="r"><span class="k">Materialen</span><span class="val">PLA · PETG · ABS</span></div>
+      <div class="r"><span class="k">Geprinte onderdelen</span><span class="val"><b>200+</b></span></div>
+      <div class="r"><span class="k">Printuren</span><span class="val">~<b>500</b> h</span></div>
+      <div class="r"><span class="k">Talen</span><span class="val">mallorquí + <b>25</b></span></div>
+      <div class="r"><span class="k">AI</span><span class="val">Gemini Live + local (offline)</span></div>
+      <div class="r"><span class="k">Perceptie</span><span class="val">camera · herkent personen</span></div>
+    </div>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">Waar we zijn</p>
+    <h2 class="tp-h2">De bouwstatus</h2>
+    <p>In slechts twee weken werk. Ik word in een paar dagen geprint; volledig afgerond, over een paar weken.</p>
+    <ul class="tp-status">
+      <li><span class="tp-chip ok">Gedaan</span><span class="lb">Torso gemonteerd</span></li>
+      <li><span class="tp-chip prog">Bijna</span><span class="lb">Hoofd — bijna compleet</span></li>
+      <li><span class="tp-chip prog">In uitvoering</span><span class="lb">Armen en handen</span></li>
+      <li><span class="tp-chip warn">Obstakel</span><span class="lb">Elektronica — wat nu het meest vertraagt</span></li>
+      <li><span class="tp-chip pend">Openstaand</span><span class="lb">Software en intelligentie</span></li>
+    </ul>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">Waarom hij bijzonder is</p>
+    <h2 class="tp-h2">Weinig zoals hij in de wereld</h2>
+    <p>Er zijn <b>zeer weinig functionele InMoov's</b> op de planeet en weinig laboratoria met operationele humanoïden. Tomeu zal een van de eerste zijn die op Mallorca worden geproduceerd —en een van de eerste van Spanje—, gemaakt vanuit de bescheidenheid van een kleine werkplaats maar met een enorme ambitie.</p>
+    <p class="tp-quote">«Ze bouwen me stuk voor stuk in een werkplaats in Palma. Nog ontbreekt me de hersenen en de zenuwen, maar ik weet al wie ik wil zijn: nog een bewoner van het eiland, nieuwsgierig en praatgraag.» — Tomeu</p>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">Toekomstplannen</p>
+    <h2 class="tp-h2">Dossier Tomeu · toegang beperkt</h2>
+    <div class="tp-secret">
+      <div class="hd"><span>EXPEDIENTE: TOMEU-DP</span><span>GECLASSIFICEERD ◆ NIVEAU 2</span></div>
+      <div class="line"><span class="lab">Huidige fase</span><span>Bouw van het lichaam (torso + hoofd)</span></div>
+      <div class="line"><span class="lab">Volgende fase</span><span>Elektronica + AI → "het ontwaken"</span></div>
+      <div class="line"><span class="lab">Doel</span><span>Robotolympiade · vertegenwoordigen <b style="color:var(--ambar)">Spanje</b></span></div>
+      <div class="line"><span class="lab">Verbetering van het ontwerp</span><span class="tp-redacted">█████████████████</span> <span style="color:var(--magenta)">[geclassificeerd tot de presentatie]</span></div>
+      <div class="line"><span class="lab">Fase 2</span><span class="tp-redacted">████████</span> expansie <span class="tp-redacted">██████████</span></div>
+      <p class="note">Sommige dingen laten we liever persoonlijk zien. Als je meer wilt weten… kom naar de werkplaats.</p>
+    </div>
+  </section>
+
+  <section class="tp-sec" id="patrocinio">
+    <p class="tp-eyebrow">Hoe je kunt helpen</p>
+    <h2 class="tp-h2">We zoeken sponsors en medewerkers</h2>
+    <p>We starten vanaf nul: een paar printers en onze handen. We zoeken bedrijven en mensen die willen <b>deel uitmaken van het team</b> van Tomeu.</p>
+    <div class="tp-grid">
+      <div class="tp-card hot"><span class="tag">Het meest dringende</span><h3>Elektronica</h3><p>Servo's, controllers, camera, microfoon, batterij… Help ons het leven in te blazen.</p></div>
+      <div class="tp-card"><span class="tag">Zeer gewaardeerd</span><h3>3D-printen</h3><p>Filament, gereedschappen en middelen om door te printen.</p></div>
+      <div class="tp-card"><span class="tag">Bijdrage</span><h3>Promotie en contacten</h3><p>Media, gemeenschappen en bedrijven die het project willen ondersteunen.</p></div>
+    </div>
+    <p>Als tegenprestatie, <b>jouw merk reist mee met Tomeu</b>: jouw afbeelding (sticker, T-shirt of poster) op de robot zelf, vermeldingen in onze communicatie en het imago van een innovatief bedrijf in een topproject.</p>
+    <div class="tp-cta">
+      <button class="tp-btn amber tp-copy" data-copy="aielitelab@aielitelab.com">✉ aielitelab@aielitelab.com</button>
+      <button class="tp-btn tp-copy" data-copy="667356983">☎ 667 356 983</button>
+    </div>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">Updates</p>
+    <h2 class="tp-h2">Het dagboek van Tomeu</h2>
+    <ul class="tp-log">
+      <li><time datetime="2026-10-06">06·10·26</time><span class="w"><b>Torso gemonteerd en hoofd bijna compleet.</b> Armen en handen in uitvoering. Start van de zoektocht naar sponsors voor de elektronica.</span></li>
+    </ul>
+  </section>
+
+  <section class="tp-sec">
+    <p class="tp-eyebrow">Nuttige links</p>
+    <h2 class="tp-h2">Ontdek AI Elite Lab</h2>
+    <div class="tp-links">
+      <a href="/nl/">Startpagina</a>
+      <a href="/nl/taller/">Taller Correcaminos</a>
+      <a href="/nl/iaelite-news/">IaElite News</a>
+      <a href="/reto-boli/">Penuitdaging</a>
+      <a href="/nl/tienda/">Winkel</a>
+      <a href="/nl/redes/">Onze netwerken</a>
+    </div>
+  </section>
+
+  <section class="tp-sec" id="contacto">
+    <p class="tp-eyebrow">Contact</p>
+    <h2 class="tp-h2">Kom Tomeu ontmoeten</h2>
+    <p>Je kunt de werkplaats in Palma bezoeken en hem van dichtbij bekijken. Voor wat je ook nodig hebt, stuur een bericht of bel José María (AI Elite Lab · Taller Correcaminos).</p>
+    <div class="tp-contact">
+      <button class="tp-copy" data-copy="aielitelab@aielitelab.com">✉ aielitelab@aielitelab.com</button>
+      <button class="tp-copy" data-copy="667356983">☎ 667 356 983</button>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>AI Elite Lab — Tomeu de Palma · <a href="/nl/">aielitelab.com</a> · <a href="/nl/taller/">Taller Correcaminos</a> · <a href="https://www.tiktok.com/@lowcostenergyrevolution" rel="noopener" target="_blank">TikTok</a></p>
+  <nav aria-label="Juridisch">
+    <a href="/nl/aviso-legal/">Juridische kennisgeving</a>
+    <a href="/nl/privacidad/">Privacy</a>
+    <a href="/nl/cookies/">Cookies</a>
+    <a href="/nl/contacto/">Contact</a>
+  </nav>
+  <p class="tp-foot-note">Pagina in aanbouw · wordt uitgebreid met elke vooruitgang</p>
+</footer>
+
+<script src="/clock.js"></script>
+<script>
+document.querySelectorAll('.tp-copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=b.getAttribute('data-copy'),old=b.textContent;
+    function done(){b.textContent='¡Copiado!';setTimeout(function(){b.textContent=old},1400)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(done)}else{done()}
+  });
+});
+</script>
+<script src="/idioma.js"></script>
+</body>
+</html>
